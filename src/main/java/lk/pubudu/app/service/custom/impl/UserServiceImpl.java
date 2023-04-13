@@ -21,11 +21,12 @@ public class UserServiceImpl implements UserService {
     private final EMailSender eMailSender;
 
     @Autowired
-    public UserServiceImpl(UserRepository userRepository, Transformer transformer, EMailSender mailSender) {
+    public UserServiceImpl(UserRepository userRepository, Transformer transformer, EMailSender eMailSender) {
         this.userRepository = userRepository;
         this.transformer = transformer;
-        this.eMailSender = mailSender;
+        this.eMailSender = eMailSender;
     }
+
 
     @Override
     @Transactional(rollbackFor = Throwable.class)

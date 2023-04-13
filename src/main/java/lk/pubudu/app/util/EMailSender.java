@@ -28,6 +28,7 @@ public class EMailSender {
             mail.setText(message);
             javaMailSender.send(mail);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new NotFoundException("Invalid email id");
         }
     }
