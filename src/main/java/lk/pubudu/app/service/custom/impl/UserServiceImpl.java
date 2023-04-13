@@ -8,6 +8,7 @@ import lk.pubudu.app.service.util.Transformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -24,6 +25,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(rollbackFor = Throwable.class)
     public void createNewUser(UserDTO userDTO) {
         Optional<User> user = userRepository.findById(userDTO.getEmail());
         if (user.isPresent()) throw new DuplicateKeyException("A user is already exists with this email address");
