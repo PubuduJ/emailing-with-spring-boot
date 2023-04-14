@@ -5,6 +5,27 @@ Knowledge of the **email sending feature** in Spring Boot.
 In this project, **user web service** is exposed as an **API** under the **users** resource and more information on the user web 
 service with example test cases can be found in the below API documentation.
 
+
+Here, emails are sent to the appropriate users via a **third-party email service provider.** 
+When a request comes to the **Spring Boot backend**, an email is sent from the **backend** to the appropriate user with the help of this email service provider. 
+**(SMTP server)**
+
+In this project, when the **user is saved** in the database, an email will be sent to the email address that comes from the **request JSON.**
+The **working procedure** of the email sending function is shown in the following diagram.
+
+<img src="assets/working-procedure.png" alt="splash-screen" width="700px"/><br>
+
+**SendInBlue's SMTP server** will be used as the email service provider for this project. 
+It is required to **create an account** at SendInBlue and after creation go to the **SMTP & API 
+section** and get the **SMTP server**, **port**, **login email** and **master password.** These details should be used in the `application.properties` resource bundle as below.
+
+```
+spring.mail.host=SMTP Server
+spring.mail.port=port
+spring.mail.username=login email
+spring.mail.password=master password
+```
+
 #### Highlighted features of the application,
 
 
@@ -51,7 +72,7 @@ If neglect to create, the project will automatically generate it when it is firs
 1. Clone the project using `https://github.com/PubuduJ/emailing-with-spring-boot.git` terminal command.
 2. Open the `pom.xml` file from **IntelliJ IDEA**, make sure to open this as a project.
 3. Change the `spring.datasource.password` in the `application.properties` to your local machine MySQL server password.
-4. Give the values for `spring.mail.username` and `spring.mail.password` from your `Sendinblue` **SMTP Server** account.
+4. Give the values for `spring.mail.host`, `spring.mail.port`, `spring.mail.username` and `spring.mail.password` in the `application.properties` from your `Sendinblue` **SMTP Server** account.
 
 ## Version
 v1.0.0
