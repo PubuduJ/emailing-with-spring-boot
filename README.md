@@ -16,7 +16,7 @@ The **working procedure** of the email sending function is shown in the followin
 <img src="assets/working-procedure.png" alt="splash-screen" width="700px"/><br>
 
 **SendInBlue's SMTP server** will be used as the email service provider for this project. 
-It is required to **create an account** at SendInBlue and after creation go to the **SMTP & API 
+It is required to **create an account** at [**SendInBlue**](https://www.sendinblue.com/?utm_source=adwords_brand&utm_medium=lastclick&utm_content=SendinBlue&utm_extension&utm_term=sendinblue&utm_matchtype=e&utm_campaign=1153673712&utm_network=g&km_adid=355470527172&km_adposition&km_device=c&utm_adgroupid=53093595276&gclid=CjwKCAjw0N6hBhAUEiwAXab-TVawnuSLp00WSq8hvJ7B1pJ4pnyqHwjoNrTyuVkvpyyA2G1ziC302RoCt3kQAvD_BwE) and after creation go to the **SMTP & API 
 section** and get the **SMTP server**, **port**, **login email** and **master password.** These details should be used in the `application.properties` resource bundle as below.
 
 ```
