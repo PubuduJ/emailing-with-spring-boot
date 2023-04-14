@@ -28,7 +28,7 @@ spring.mail.password=master password
 
 #### Highlighted features of the application,
 
-
+- When the user is saved in the database, an email is sent from the Spring Boot backend to the user's email address.
 
 #### Few snapshots of the documentation
 
@@ -38,7 +38,7 @@ spring.mail.password=master password
 
 #### ERD of the database
 
-<img src="assets/ERD.png" alt="erd" width="600px"/>
+<img src="assets/ERD.png" alt="erd" width="500px"/>
 
 ## Used Technologies
 
