@@ -5,6 +5,7 @@ Knowledge of the **email sending feature** in Spring Boot.
 In this project, **user web service** is exposed as an **API** under the **users** resource and more information on the user web 
 service with example test cases can be found in the below API documentation.
 
+- [**Users API documentation**](https://documenter.getpostman.com/view/25306703/2s93Xwz4Kk)
 
 Here, emails are sent to the appropriate users via a **third-party email service provider.** 
 When a request comes to the **Spring Boot backend**, an email is sent from the **backend** to the appropriate user with the help of this email service provider. 
@@ -36,7 +37,7 @@ spring.mail.password=master password
 
 - Transaction got rolled back.<br>
 
-<img src="assets/roll-back.png" alt="splash-screen" width="800px"/>
+  <img src="assets/roll-back.png" alt="splash-screen" width="800px"/>
 
 #### ERD of the database
 
