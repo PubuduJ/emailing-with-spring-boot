@@ -82,7 +82,7 @@ If neglect to create, the project will automatically generate it when it is firs
 4. Give the values for `spring.mail.host`, `spring.mail.port`, `spring.mail.username` and `spring.mail.password` in the `application.properties` from your `Sendinblue` **SMTP Server** account.
 
 ## Version
-v1.0.0
+v1.1.0
 
 ## License
 Copyright &copy; 2023 [Pubudu Janith](https://www.linkedin.com/in/pubudujanith/). All Rights Reserved.<br>
