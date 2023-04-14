@@ -35,9 +35,13 @@ spring.mail.password=master password
 
 #### Few snapshots of the documentation
 
-- Transaction got rolled back.<br>
+- Create new user.<br>
 
-  <img src="assets/roll-back.png" alt="splash-screen" width="800px"/>
+  <img src="assets/create-new-user.png" alt="create-new-user" width="700px"/>
+
+- An attempt to save a user that already exist in the database.<br>
+
+  <img src="assets/already-exist.png" alt="already-exist" width="700px"/>
 
 #### ERD of the database
 
