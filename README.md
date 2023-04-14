@@ -1,4 +1,4 @@
-# Emailing With Spring Boot <img src="assets/logo.png" alt="drawing" width="27px"/>
+# Emailing with Spring Boot <img src="assets/logo.png" alt="drawing" width="27px"/>
 
 This project was developed using the **Spring Boot framework** with **n-tier architecture** to understand and improve on the
 knowledge of **email sending functionality** in Spring Boot.
